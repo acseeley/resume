@@ -1,89 +1,189 @@
+:root {
+    --primary-bg: #001D4A;
+    --secondary-bg: #173a5e;
+    --primary-text: #f0f1f2;
+    --secondary-text: #AED6F1;
+    --accent-color: #DC9596;
+    --button-bg: #046A91;
+    --button-hover-bg: #DC9596;
+    --hover-detail-bg: #DC9596;
+    --sub-section-bg: #024E7B;
+    --border-color: #FFC0CB;
+    --sub-border: #DC9596;
+}
+
+/* Blue Gradient Theme */
+[data-theme="alt1"] {
+    --primary-bg: #FFFFFF; /* Darkest blue */
+    --secondary-bg: #dadada; /* Light blue */
+    --primary-text: #000000; /* Lightest blue for contrast */
+    --secondary-text: #000000; /* Second lightest blue */
+    --accent-color: #b3b3b3; /* Neutral blue */
+    --button-bg: #FFFFFF; /* Button background uses darkest blue */
+    --button-hover-bg: #FFFFFF; /* Button hover uses neutral blue */
+    --hover-detail-bg: #FFFFFF; /* Hover details use second lightest blue */
+    --sub-section-bg: #ffffff; /* Subsection background uses light blue */
+    --border-color: #d4d39d; /* Border color uses lightest blue */
+    --sub-border: #DC9596;
+}
+
+/* Warm Earth Tones Theme */
+[data-theme="alt2"] {
+    --primary-bg: #244855; /* Dark teal */
+    --secondary-bg: #E64833; /* Bright red */
+    --primary-text: #FBF9D0; /* Pale cream for contrast */
+    --secondary-text: #874F41; /* Earthy brown */
+    --accent-color: #90AEAD; /* Soft blue */
+    --button-bg: #E64833; /* Button background uses bright red */
+    --button-hover-bg: #874F41; /* Button hover uses earthy brown */
+    --hover-detail-bg: #90AEAD; /* Hover details use soft blue */
+    --sub-section-bg: #244855; /* Subsection background uses dark teal */
+    --border-color: #FBF9D0; /* Border color uses pale cream */
+    --sub-border: #DC9596;
+}
+
+/* Vibrant Color Mix Theme */
+[data-theme="alt3"] {
+    --primary-bg: #ea5362; /* Soft red */
+    --secondary-bg: #be7178; /* Light grey-blue */
+    --primary-text: #7E685A; /* Muted brown */
+    --secondary-text: #ffffff; /* Lime green */
+    --accent-color: #C2B9B0; /* Warm grey */
+    --button-bg: #ea5362; /* Button background uses soft red */
+    --button-hover-bg: #C2B9B0; /* Button hover uses warm grey */
+    --hover-detail-bg: #C2CAD0; /* Hover details use light grey-blue */
+    --sub-section-bg: #AFD275; /* Subsection background uses lime green */
+    --border-color: #7E685A; /* Border color uses muted brown */
+    --sub-border: #DC9596;
+}
+
+/* Primary Contrast Theme */
+[data-theme="alt4"] {
+    --primary-bg: #D79922; /* Mustard yellow */
+    --secondary-bg: #4056A1; /* Deep blue */
+    --primary-text: #F13C20; /* Bright red */
+    --secondary-text: #EFEBBA; /* Soft yellow */
+    --accent-color: #C5CBE3; /* Light grey-blue */
+    --button-bg: #F13C20; /* Button background uses bright red */
+    --button-hover-bg: #D79922; /* Button hover uses mustard yellow */
+    --hover-detail-bg: #4056A1; /* Hover details use deep blue */
+    --sub-section-bg: #C5CBE3; /* Subsection background uses light grey-blue */
+    --border-color: #EFEBBA; /* Border color uses soft yellow */
+    --sub-border: #DC9596;
+}
+
+/* Soft Pastels Theme */
+[data-theme="alt5"] {
+    --primary-bg: #EDC7B7; /* Soft peach */
+    --secondary-bg: #EEE2DC; /* Pale pink */
+    --primary-text: #AC3B61; /* Dark pink */
+    --secondary-text: #BAB2B5; /* Grey */
+    --accent-color: #123C69; /* Dark blue */
+    --button-bg: #AC3B61; /* Button background uses dark pink */
+    --button-hover-bg: #123C69; /* Button hover uses dark blue */
+    --hover-detail-bg: #BAB2B5; /* Hover details use grey */
+    --sub-section-bg: #EDC7B7; /* Subsection background uses soft peach */
+    --border-color: #EEE2DC; /* Border color uses pale pink */
+    --sub-border: #DC9596;
+}
+
+
+
+
 body {
     display: flex;
     margin: 0;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #f0f1f2;
-    background: linear-gradient(to bottom right, #001D4A, #173a5e);
-    position: relative; /* Needed for absolute positioning of the line */
+    color: var(--primary-text);
+    background: linear-gradient(to bottom right, var(--primary-bg), var(--secondary-bg));
+    position: relative;
 }
 
 .sidebar {
-    width: 40%; /* Set the width of the sidebar to 40% of the total screen width */
+    width: 40%;
     padding: 20px;
     position: fixed;
     height: 100vh;
     overflow-y: auto;
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    flex-direction: column; /* Stack the content vertically */
-    left: 5%; /* Start from 5% of the left side of the screen */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 5%;
 }
 
 .profile-content {
     text-align: center; /* Center text */
-    width: 100%; /* Ensure it uses all the available space */
+    width: 85%; /* Ensure it uses all the available space */
+    height: 65%;
+    padding: 20px; /* Add padding to give some space inside the borders */
+    border: 2px solid var(--accent-color); /* Set the color and thickness of the border */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the container */
 }
 
+
+
 h1 {
-    font-size: 60px; /* Larger font size for the name */
-    color: #f0f1f2; /* Light color for readability */
-    margin-bottom: 10px; /* Space below the name */
+    font-size: 60px;
+    color: var(--primary-text);
+    margin-bottom: 10px;
 }
 
 h4 {
-    font-size: 30px; /* Larger font size for the description */
-    color: #AED6F1; /* Slightly lighter color for distinction */
-    margin-bottom: 10px; /* Space between paragraphs */
+    font-size: 30px;
+    color: var(--secondary-text);
+    margin-bottom: 10px;
 }
 
+p, h5 {
+    font-size: 24px;
+    color: var(--secondary-text);
+    margin-bottom: 10px;
+}
 
-p {
-    font-size: 24px; /* Larger font size for the description */
-    color: #AED6F1; /* Slightly lighter color for distinction */
-    margin-bottom: 10px; /* Space between paragraphs */
+h5 {
+    font-size: 16px;
 }
 
 .download-btn {
-    background-color: #DC9596;
-    color: #f0f1f2;
+    background-color: var(--button-bg);
+    color: var(--primary-text);
     padding: 8px 16px;
     margin: 10px 0;
     text-decoration: none;
-    border-radius: 15px; /* Rounded rectangle */
+    border-radius: 15px;
     font-size: 16px;
+    transition: background-color 0.3s ease;
     text-align: center;
+}
+.download-btn:hover {
+    background-color: var(--button-hover-bg);
 }
 
 .social-links {
-    margin-top: 20px; /* Space above the social links */
+    display: block;
+    justify-content: space-around; /* This spreads the icons evenly */
+    padding: 10px 0; /* Add padding for visual space around icons */
 }
 
 .social-icon {
-    display: inline-block; /* Place icons horizontally */
-    margin-right: 10px; /* Space between icons */
-    color: #AED6F1; /* Icon and text color */
-    font-size: 16px; /* Icon size */
-    text-decoration: none; /* No underline */
+    text-decoration: none; /* Removes underline from icons */
+    color: inherit; /* Inherits color from parent, or set a default color */
+    margin: 0 12px; /* Reduce spacing between icons */
 }
 
 .social-icon i {
-    margin-right: 5px; /* Space between icon and text */
+    font-size: 24px; /* Increases the size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
 }
 
-
-.download-btn {
-    display: inline-block;
-    background-color: #DC9596;
-    color: #f0f1f2;
-    padding: 8px 16px;
-    margin: 10px 0;
-    text-decoration: none;
-    border-radius: 15px; /* Rounded rectangle */
-    font-size: 14px;
-    text-align: center;
+.social-icon:hover i {
+    color: #DC9596; /* Changes the icon color to pink on hover */
 }
+
 
 .main-content {
     width: 50%;
@@ -98,37 +198,38 @@ p {
     left: 50%;
     bottom: 0;
     width: 2px;
-    background-color: #AED6F1; /* Light teal color */
+    background-color: var(--accent-color);
 }
 
 h2 {
-    color: #AED6F1; /* Light teal for headers */
+    color: var(--secondary-text);
     margin-top: 0;
-    font-size: 30px; /* Larger font size for section titles */
+    font-size: 30px;
 }
 
 section {
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #AED6F1; /* Add a line under each section */
-    padding-left: 10%; /* Line starts at 60% of the container width */
-    padding-right: 10%; /* Line ends at 80% of the container width */
+    border-bottom: 2px solid var(--accent-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    
 }
 
 .sub-section {
     position: relative;
-    background-color: #024E7B; /* Adjust the background color as needed */
+    background-color: var(--sub-section-bg);
     padding: 10px;
     font-size: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
-    overflow: hidden; /* Ensures content outside this div does not show, important for animation */
-    transition: all 0.3s ease-in-out; /* Smooth transition for expanding the box */
+    overflow: visible;
+    transition: border 0.3s ease;  /* Only transition the border color */
+    border: 2px solid transparent;  /* Initialize with a transparent border */
 }
 
-.sub-section:hover .hover-details {
-    max-height: 500px; /* Enough height to show the content */
-    padding: 10px; /* Add padding when expanded */
+.sub-section:hover {
+    border: 2px solid var(--accent-color); /* Apply colored border on hover */
 }
 
 .hover-details {
@@ -136,14 +237,20 @@ section {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;  /* Ensures it doesn't extend past the right side */
     width: 100%;
-    background-color: #DC9596; /* Slightly different background for visibility */
-    color: #f0f1f2;
-    padding: 0; /* Initial state without padding */
-    max-height: 0; /* Start with max-height 0 */
-    overflow: hidden; /* Hide content until hover */
-    transition: all 0.4s ease; /* Transition effect to expand the content */
-    transition-property: max-height, padding; /* Specify properties to transition */
+    background-color: var(--hover-detail-bg);
+    color: var(--primary-text);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease; /* Adjust transition to max-height and padding */
+    box-sizing: border-box;  /* Includes padding and border in the element's total width and height */
+}
+
+.sub-section:hover .hover-details {
+    max-height: 500px; /* Adjust max height when hovered */
+    padding: 10px; /* Padding when expanded */
 }
 
 .hover-details i {
@@ -167,96 +274,120 @@ section {
 
 .languages-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
-    gap: 10px; /* Space between grid items */
+    grid-template-columns: 1fr 1fr; /* Keeps the two-column layout */
+    gap: 10px; /* Adjust spacing between grid items */
+    align-items: center; /* Aligns items vertically within each cell */
 }
 
 .language-item {
     display: flex;
     align-items: center; /* Aligns icons and text vertically */
     padding: 5px; /* Padding around items for better spacing */
+    transition: background-color 0.3s ease; /* Optional: for hover effects */
 }
 
 .language-item i {
-    color: #DC9596; /* Change this color to whatever you prefer */
-    font-size: 24px; /* Icon size */
-    margin-right: 10px; /* Space between icon and text */
+    color: var(--primary-text);
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 .language-item span {
-    color: #AED6F1; /* Ensures the text color is different from the icon color */
-    font-size: 24px; /* Text size */
+    color: var(--secondary-text);
+    font-size: 20px; /* Adjust based on your design */
 }
 
-
-.additional-projects {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    opacity: 0; /* Start hidden */
-    visibility: hidden; /* Start hidden */
+.additional-projects, .coursework-section {
+    display: block;
+    max-height: 0;  /* Start with max-height 0 to ensure it's not visible */
+    opacity: 0;     /* Start fully transparent */
+    overflow: hidden; /* Ensures content does not show when container is closed */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transitions */
 }
 
-.additional-projects.show {
-    max-height: 1000px; /* Large enough to fit content */
-    opacity: 1;
-    visibility: visible; /* Make visible */
+.additional-projects.show, .coursework-section.show {
+    display: block; /* Display block to make it visible */
+    max-height: 2000px; /* Sufficiently large max-height to show the content */
+    opacity: 1; /* Fully visible */
 }
+
 
 
 .show-more {
-    background-color: #DC9596; /* Darker shade of blue for the button */
-    color: white; /* Text color */
+    background-color: var(--button-bg);
+    color: var(--primary-text);
     border: none;
-    padding: 10px 20px; /* Padding around the text */
-    border-radius: 15px; /* Rounded corners */
-    cursor: pointer; /* Cursor indicates clickable */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    outline: none; /* Remove outline to keep styles clean */
-    font-size: 16px; /* Suitable font size */
-    margin-top: 10px; /* Space from the last project */
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .show-more:hover {
-    background-color: #046A91; /* Slightly lighter blue on hover */
+    background-color: var(--button-hover-bg);
 }
+
 .about-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    
 }
 
 .about-text {
     flex: 1;
-    margin-right: 20px; /* Increases space between the text and the images */
+    margin-right: 20px;
 }
 
 .about-img-container {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Aligns additional images in a column */
-    gap: 10px; /* Adds space between each image */
+    flex-direction: column;
+    gap: 10px;
 }
 
 .about-img {
     width: 100%;
     height: auto;
-    border: 2px solid #FFC0CB; /* Light pink border */
+    border: 2px solid var(--border-color);
     border-radius: 5px;
 }
 
-
-/* Ensure the .main-content and other elements still have appropriate styles */
-.main-content {
-    padding: 20px;
-    overflow: auto;
+.button {
+    background-color: var(--button-bg); /* Use your color variable */
+    color: var(--primary-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures it's properly formatted */
+    text-align: center; /* Centers the text inside the button */
+    
 }
 
-
-
-abt{
-    font-size: 30px; /* Larger font size for the description */
-    color: #AED6F1; /* Slightly lighter color for distinction */
-    margin-bottom: 10px; /* Space between paragraphs */
+.button:hover {
+    background-color: var(--button-hover-bg);
+    
 }
+
+.theme-button {
+    background-color: var(--button-bg); /* Use your color variable */
+    color: var(--primary-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures it's properly formatted */
+    text-align: center; /* Centers the text inside the button */
+}
+
+.theme-button:hover {
+    background-color: var(--button-hover-bg);
+}
+

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
@@ -12,21 +14,29 @@
         <div class="profile-content">
             <h1>Adam Seeley</h1>
             <h4>Junior Software Developer</h4>
-            <h4>Experienced with web development, software development, and data engineering.</h4>
-            <a href="AdamSeeley_Resume.pdf" download="AdamSeeley_Resume.pdf" class="download-btn">Download Resume</a>
+            <h4>Experienced with web development, software development, and data engineering.</h4><br><br>
+                
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/adam-seeley-a2a157156/" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <i class="placeholder-icon"></i> LinkedIn
+                    <i class="devicon-linkedin-plain"></i>          
                 </a>                               
                 <a href="https://github.com/acseeley" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <i class="placeholder-icon"></i> GitHub
+                    <i class="devicon-github-original"></i>
                 </a> 
-                <a href="https://www.facebook.com/adam.seeley.1738/" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <i class="placeholder-icon"></i> FaceBook
+                <a href="https://www.facebook.com/adam.seeley.1738/" class="social-icon" target="_blank" rel="noopener noreferrer">                   
+                    <i class="devicon-facebook-plain"></i>      
                 </a> 
-                <a href="mailto:your.email@example.com" class="social-icon"><i class="placeholder-icon"></i> Email</a>
+                <a href="mailto:your.email@example.com" class="social-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                
             </div>
+            
+            <br><br><a href="AdamSeeley_Resume.pdf" download="AdamSeeley_Resume.pdf" class="download-btn">Download Resume</a>
         </div>
+        
+        
+        
     </div>
     
     <div class="main-content">
@@ -39,6 +49,28 @@
                  Minor in <b>Computer Science</b> and <b>Data Analytics</b><br>
                  GPA: 3.4</p>
             </div>
+            <div class="additional-projects">
+                <div class="sub-section">
+                    <h3>Relevant Coursework</h3>
+                    <h5>
+                        <span style="color: #DC9596;">Data Pipelines:</span> Implemented ETL pipelines using Pandas for data integration across databases and data sources.<br>
+                        <span style="color: #DC9596;">Advanced Python Programming:</span> Engineered complex algorithms for real-world applications, enhancing coding skills.<br>
+                        <span style="color: #DC9596;">Advanced Database Management:</span> Explored deep aspects of relational databases including SQL queries, schema design, and administration.<br>
+                        <span style="color: #DC9596;">Data Visualization with Tableau:</span> Used Tableau to transform data into actionable business intelligence visualizations.<br>
+                        <span style="color: #DC9596;">Data Analytics:</span> Applied Python libraries such as Pandas and NumPy for advanced data analysis and decision-making.<br>
+                        <span style="color: #DC9596;">Methods in Computer Science:</span> Mastered Object-Oriented Programming, version control, and standard software development practices.<br>
+                        <span style="color: #DC9596;">Discrete Mathematics:</span> Developed problem-solving skills using programming, algorithms, and mathematical reasoning.<br>
+                        <span style="color: #DC9596;">Python Programming:</span> Utilized cloud services for executing and managing Python applications efficiently.<br>
+                        <span style="color: #DC9596;">Cloud Computing:</span> Deployed web solutions with AWS services for database hosting, data storage, and server management.<br>
+                        <span style="color: #DC9596;">Cyber Security:</span> Enforced security measures in software development and systems management, focusing on Linux environments.<br>
+                        <span style="color: #DC9596;">Computer Science with Python:</span> Solved diverse computer science problems using Object-Oriented Programming principles.<br>
+                        <span style="color: #DC9596;">Data Warehousing:</span> Designed systems for effective data storage, transfer, and transformation to support business intelligence.<br>
+                        <span style="color: #DC9596;">Data and Information in Business:</span> Integrated Python and SQL to develop programs that streamline business processes.<br>
+                        <span style="color: #FFFFFF;"></spanstyle>*These are the only high-level classes, so any pre-requisite/introduction classes were not added here.</span>
+                    </h5>
+                </div>
+            </div>
+            <button class="button show-coursework">Show Coursework</button>
         </section>
         <section id="experience">
             <h2>Experience</h2>
@@ -49,7 +81,6 @@
                 <p>Developed code that streamlined the job submittal process for HR by consolidating 4 steps into a single process.</p>
                 <p>Updated reports to use real-time data from ongoing projects company wide.</p>
                 
-                </p>
                 <div class="hover-details">
                     <span>PHP, JavaScript, HTML, CSS, Windows Powershell, JSON, CSV, Oracle SQL, Github</span>
                 </div>
@@ -57,14 +88,14 @@
         </section>
         <section id="programming-languages">
             <h2>Programming Languages & Tools</h2>
-            <div class="languages-grid">
+            <div class="sub-section languages-grid"> <!-- Combine the sub-section and languages-grid classes -->
                 <div class="language-item">
                     <i class="devicon-python-plain"></i>
                     <span>Python</span>
                 </div>
                 <div class="language-item">
                     <i class="devicon-php-plain"></i>
-                    <span>PHP</span>
+                    <span>PHP (CodeIgniter)</span>
                 </div>
                 <div class="language-item">
                     <i class="devicon-javascript-plain"></i>
@@ -106,6 +137,14 @@
                     <i class="devicon-arduino-plain"></i>          
                     <span>Arduino</span>
                 </div>
+                <div class="language-item">
+                    <i class="devicon-pandas-plain"></i>              
+                    <span>Pandas</span>
+                </div>
+                <div class="language-item">
+                    <i class="devicon-numpy-plain"></i>                        
+                    <span>Numpy</span>
+                </div>
             </div>
         </section>
         <section id="projects">
@@ -136,7 +175,8 @@
                 </div>
             </div>
             <!-- Additional hidden projects that are not initially visible -->
-            <div class="additional-projects">
+
+            <!-- <div class="additional-projects"> -->
                 <div class="sub-section">
                     <h3>Command Line Interface Pokedex</h3>
                     <p>Developed a CLI that is to be used alongside a Pokemon game to help new players.</p>
@@ -146,9 +186,9 @@
                         <span>Python, API, JSON, Windows</span>
                     </div>
                 </div>
-            </div>
-            <button class="show-more">Show More Projects</button>
-</section>
+            <!-- </div>
+            <button class="button show-more">Show More Projects</button> -->
+        </section>
         
         <section id="volunteer">
             <h2>Volunteer</h2>
