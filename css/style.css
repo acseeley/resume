@@ -1,0 +1,262 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f1f2;
+    background: linear-gradient(to bottom right, #001D4A, #173a5e);
+    position: relative; /* Needed for absolute positioning of the line */
+}
+
+.sidebar {
+    width: 40%; /* Set the width of the sidebar to 40% of the total screen width */
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    flex-direction: column; /* Stack the content vertically */
+    left: 5%; /* Start from 5% of the left side of the screen */
+}
+
+.profile-content {
+    text-align: center; /* Center text */
+    width: 100%; /* Ensure it uses all the available space */
+}
+
+h1 {
+    font-size: 60px; /* Larger font size for the name */
+    color: #f0f1f2; /* Light color for readability */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+h4 {
+    font-size: 30px; /* Larger font size for the description */
+    color: #AED6F1; /* Slightly lighter color for distinction */
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+
+p {
+    font-size: 24px; /* Larger font size for the description */
+    color: #AED6F1; /* Slightly lighter color for distinction */
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.download-btn {
+    background-color: #DC9596;
+    color: #f0f1f2;
+    padding: 8px 16px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 15px; /* Rounded rectangle */
+    font-size: 16px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px; /* Space above the social links */
+}
+
+.social-icon {
+    display: inline-block; /* Place icons horizontally */
+    margin-right: 10px; /* Space between icons */
+    color: #AED6F1; /* Icon and text color */
+    font-size: 16px; /* Icon size */
+    text-decoration: none; /* No underline */
+}
+
+.social-icon i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+.download-btn {
+    display: inline-block;
+    background-color: #DC9596;
+    color: #f0f1f2;
+    padding: 8px 16px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 15px; /* Rounded rectangle */
+    font-size: 14px;
+    text-align: center;
+}
+
+.main-content {
+    width: 50%;
+    margin-left: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 2px;
+    background-color: #AED6F1; /* Light teal color */
+}
+
+h2 {
+    color: #AED6F1; /* Light teal for headers */
+    margin-top: 0;
+    font-size: 30px; /* Larger font size for section titles */
+}
+
+section {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #AED6F1; /* Add a line under each section */
+    padding-left: 10%; /* Line starts at 60% of the container width */
+    padding-right: 10%; /* Line ends at 80% of the container width */
+}
+
+.sub-section {
+    position: relative;
+    background-color: #024E7B; /* Adjust the background color as needed */
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures content outside this div does not show, important for animation */
+    transition: all 0.3s ease-in-out; /* Smooth transition for expanding the box */
+}
+
+.sub-section:hover .hover-details {
+    max-height: 500px; /* Enough height to show the content */
+    padding: 10px; /* Add padding when expanded */
+}
+
+.hover-details {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DC9596; /* Slightly different background for visibility */
+    color: #f0f1f2;
+    padding: 0; /* Initial state without padding */
+    max-height: 0; /* Start with max-height 0 */
+    overflow: hidden; /* Hide content until hover */
+    transition: all 0.4s ease; /* Transition effect to expand the content */
+    transition-property: max-height, padding; /* Specify properties to transition */
+}
+
+.hover-details i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.hover-details span {
+    font-size: 16px;
+}
+
+
+
+.programming-languages {
+    margin-top: 20px;
+}
+
+.programming-languages h2 {
+    margin-bottom: 10px;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
+    gap: 10px; /* Space between grid items */
+}
+
+.language-item {
+    display: flex;
+    align-items: center; /* Aligns icons and text vertically */
+    padding: 5px; /* Padding around items for better spacing */
+}
+
+.language-item i {
+    color: #DC9596; /* Change this color to whatever you prefer */
+    font-size: 24px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.language-item span {
+    color: #AED6F1; /* Ensures the text color is different from the icon color */
+    font-size: 24px; /* Text size */
+}
+
+
+.additional-projects {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Start hidden */
+}
+
+.additional-projects.show {
+    max-height: 1000px; /* Large enough to fit content */
+    opacity: 1;
+    visibility: visible; /* Make visible */
+}
+
+
+.show-more {
+    background-color: #DC9596; /* Darker shade of blue for the button */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    outline: none; /* Remove outline to keep styles clean */
+    font-size: 16px; /* Suitable font size */
+    margin-top: 10px; /* Space from the last project */
+}
+
+.show-more:hover {
+    background-color: #046A91; /* Slightly lighter blue on hover */
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px; /* Increases space between the text and the images */
+}
+
+.about-img-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Aligns additional images in a column */
+    gap: 10px; /* Adds space between each image */
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #FFC0CB; /* Light pink border */
+    border-radius: 5px;
+}
+
+
+/* Ensure the .main-content and other elements still have appropriate styles */
+.main-content {
+    padding: 20px;
+    overflow: auto;
+}
+
+
+
+abt{
+    font-size: 30px; /* Larger font size for the description */
+    color: #AED6F1; /* Slightly lighter color for distinction */
+    margin-bottom: 10px; /* Space between paragraphs */
+}
