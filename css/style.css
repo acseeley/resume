@@ -248,7 +248,7 @@ section {
     transition: max-height 0.4s ease, padding 0.4s ease; /* Adjust transition to max-height and padding */
     box-sizing: border-box;  /* Includes padding and border in the element's total width and height */
     font-weight: bold; /* Add this line to make the text bold */
-    font-size: 16px; /* Keep the existing font size if needed */
+    font-size: 12px; /* Keep the existing font size if needed */
 }
 
 .sub-section:hover .hover-details {
@@ -287,12 +287,28 @@ section {
     align-items: center; /* Aligns icons and text vertically */
     padding: 5px; /* Padding around items for better spacing */
     transition: background-color 0.3s ease; /* Optional: for hover effects */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space between the icon and the text */
 }
+
+.icon-white {
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+.snowflake-item {
+    margin-top: 8px; /* Adjust this value as needed */
+}
+
+.snowflake-item img {
+    margin-right: 8px; /* Adds space between the icon and the text */
+}
+
 
 .language-item i {
     color: var(--primary-text);
     font-size: 24px;
     margin-right: 10px;
+
 }
 
 .language-item span {
