@@ -73,3 +73,4 @@ document.addEventListener("DOMContentLoaded", function() {
         section.style.setProperty('--animation-delay', `${index * 100}ms`);
     });
 });
+

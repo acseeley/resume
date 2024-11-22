@@ -1,0 +1,98 @@
+{
+    "about": {
+        "name": "Adam Seeley",
+        "title": "Junior Software Developer",
+        "description": "Experienced with web development, software development, and data engineering.",
+        "details": [
+            "My name is Adam Seeley. I was born in Arizona and later moved to Utah where I would spend most of my childhood.",
+            "Growing up, I had an interest and aptitude for mathematics, reading, and sports.",
+            "After graduating high school, I had the opportunity to serve a religious mission for the Church of Jesus Christ of Latter-Day Saints."
+        ],
+        "images": [
+            "images/headshot.jpg",
+            "images/headshot.jpg",
+            "images/headshot.jpg",
+            "images/headshot.jpg"
+        ]
+    },
+    "socialLinks": [
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/adam-seeley-a2a157156/",
+            "icon": "devicon-linkedin-plain"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/acseeley",
+            "icon": "devicon-github-original"
+        },
+        {
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/adam.seeley.1738/",
+            "icon": "devicon-facebook-plain"
+        },
+        {
+            "platform": "Email",
+            "url": "mailto:your.email@example.com",
+            "icon": "fa-solid fa-envelope"
+        }
+    ],
+    "education": {
+        "university": "Utah State University",
+        "degree": "Bachelor of Science in Management Information Systems",
+        "completion": "December 2024",
+        "concentration": "Data Engineering",
+        "minor": ["Computer Science", "Data Analytics"],
+        "gpa": 3.4,
+        "relevantCoursework": [
+            "Data Pipelines: Implemented ETL pipelines using Pandas for data integration across databases and data sources.",
+            "Data Warehousing: Created and interacted with data warehouses and databases using Snowflake, Airbyte, and Docker.",
+            "Advanced Python Programming: Engineered complex algorithms for real-world applications, enhancing coding skills."
+        ]
+    },
+    "experience": [
+        {
+            "company": "JE Dunn Construction",
+            "role": "Application Developer Intern",
+            "date": "May 2023 – August 2023",
+            "achievements": [
+                "Enhanced and debugged over 20 web pages, contributing to the resolution of 40+ issues in PHP and JavaScript.",
+                "Developed code that streamlined the job submittal process for HR by consolidating 4 steps into a single process.",
+                "Updated reports to use real-time data from ongoing projects company wide."
+            ],
+            "tools": ["PHP", "JavaScript", "HTML", "CSS", "Windows Powershell", "JSON", "CSV", "Oracle SQL", "GitHub"]
+        }
+    ],
+    "programmingLanguages": [
+        { "language": "Python", "icon": "devicon-python-plain" },
+        { "language": "PHP (CodeIgniter)", "icon": "devicon-php-plain" },
+        { "language": "JavaScript", "icon": "devicon-javascript-plain" },
+        { "language": "HTML", "icon": "devicon-html5-plain" },
+        { "language": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark" }
+    ],
+    "projects": [
+        {
+            "title": "Cryptocurrency Arbitrage Trader",
+            "description": "Designed algorithms to optimize buying and selling strategies across cryptocurrencies using Python and AWS.",
+            "tools": ["Python", "AWS", "JSON", "API"]
+        },
+        {
+            "title": "Interactive NFL Statistics Website",
+            "description": "Developed an interactive site to analyze NFL data, using PHP, JavaScript, and MySQL.",
+            "tools": ["PHP", "JavaScript", "CSS", "HTML", "MySQL"]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Church of Jesus Christ of Latter-Day Saints",
+            "role": "Missionary/Volunteer",
+            "location": "Myanmar",
+            "date": "February 2019 – March 2020",
+            "activities": [
+                "Taught English in classes of 20-150 students 3 times a week.",
+                "Achieved proficiency in a foreign language through classroom learning and conversations with native speakers.",
+                "Worked 70+ hours a week through service, teaching, and helping communities."
+            ]
+        }
+    ]
+}
